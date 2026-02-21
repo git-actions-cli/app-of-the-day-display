@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import image1 from "@/assets/1.png";
-import image2 from "@/assets/2.png";
+import image1 from "@/assets/1.jpg";
+import image2 from "@/assets/2.jpg";
 
 const AppOfTheDay = () => {
   const today = new Date();
