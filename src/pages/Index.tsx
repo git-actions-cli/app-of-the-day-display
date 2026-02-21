@@ -1,12 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4">
+      <h1 className="mb-4 text-5xl font-bold tracking-tight text-foreground md:text-7xl">
+        The Daily Print
+      </h1>
+      <p className="mb-10 max-w-md text-center text-lg text-muted-foreground">
+        A new woodcut every day. Bold lines, powerful stories.
+      </p>
+      <Link
+        to="/aod"
+        className="rounded-md bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground transition-opacity hover:opacity-80"
+      >
+        App of the Day →
+      </Link>
     </div>
   );
 };
